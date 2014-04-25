@@ -6,11 +6,11 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 ![GPlus Element](http://zno.io/Qvag/gplus-element.png)
 
-> [Check it live](http://zenorocha.github.io/gplus-button/demo.html).
+> [Check it live](http://robdodson.me/gplus-button/components/gplus-button/demo.html).
 
 ## Component Page
 
-See the [component page](http://zenorocha.github.io/gplus-button) for more information.
+See the [component page](http://robdodson.github.io/gplus-button) for more information.
 
 ## Usage
 
