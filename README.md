@@ -6,20 +6,24 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 ![GPlus Element](http://zno.io/Qvag/gplus-element.png)
 
-> [Check it live](http://zenorocha.github.io/gplus-button).
+> [Check it live](http://zenorocha.github.io/gplus-button/demo.html).
+
+## Component Page
+
+See the [component page](http://zenorocha.github.io/gplus-button) for more information.
 
 ## Usage
 
 1. Import Web Components' polyfill:
 
 	```xml
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+	<script src="bower_components/platform/platform.js"></script>
 	```
 
 2. Import Custom Element:
 
 	```xml
-	<link rel="import" href="src/gplus-button.html">
+	<link rel="import" href="bower_components/gplus-button/gplus-button.html">
 	```
 
 3. Start using it!
