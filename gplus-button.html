@@ -11,7 +11,7 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 @status alpha
 @url http://zenorocha.github.io/gplus-button/
 -->
-<polymer-element name="gplus-button" attributes="annotation href size pageId lang rel width height type">
+<polymer-element name="gplus-button" attributes="annotation href size pageId lang rel width height type isContainer">
 
   <script>
   Polymer("gplus-button", {
@@ -128,6 +128,17 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
      */
     type: "g-plusone",
 
+    /**
+     * If set to `true`, the button will be created inside of the gplus-button element. Otherwise it will be appended to the body.
+     *
+     * Default: true
+     *
+     * @attribute type
+     * @type boolean
+     * @default true
+     */
+    isContainer: true,
+
     ready: function() {
       var script = document.createElement("script"),
         div = document.createElement("div"),
@@ -152,7 +163,12 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
         div.setAttribute("annotation", this.annotation);
       }
 
-      body.appendChild(div);
+      if (this.isContainer) {
+        this.appendChild(div);
+      } else {
+        body.appendChild(div);
+      }
+
       body.appendChild(script);
     }
   });
